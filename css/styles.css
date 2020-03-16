@@ -12,6 +12,8 @@ https://coolors.co/96bbbb-faf3dd-c8d5b9-f2e3bc-696d7d
 ------------------------------*/
 body {
   color: #696D7D;
+  margin: 0;
+  padding: 0;
 }
 img {
   width: 300px;
@@ -47,10 +49,19 @@ header {
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
+  display: inline-block;
 }
 
 .projects .btn:hover {
   background: rgba(150, 187, 187, 80%);
+}
+h2 {
+  margin: 0;
+}
+.content-wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
 /* Work Experience

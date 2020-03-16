@@ -1,0 +1,75 @@
+/*
+COLOR PALLETE
+https://coolors.co/96bbbb-faf3dd-c8d5b9-f2e3bc-696d7d
+#96BBBB - cambridge blue
+#FAF3DD - beige
+#C8D5B9 - pale silver
+#F2E3BC - dutch white
+#696D7D - dim gray
+*/
+
+/* Global styles
+------------------------------*/
+body {
+  color: #696D7D;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #96BBBB;
+}
+a:hover {
+  text-decoration: none;
+}
+/*text-decoration: none removes underline when link is hovered over with mouse*/
+
+/* Profile
+------------------------------*/
+header {
+  background: #96BBBB;
+}
+
+
+/* Projects
+------------------------------*/
+.projects {
+  background: #FAF3DD;
+}
+
+.projects a {
+  color: #696D7D;
+}
+
+.projects .btn {
+  color: #FAF3DD;
+  background: #96BBBB;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.projects .btn:hover {
+  background: rgba(150, 187, 187, 80%);
+}
+
+/* Work Experience
+------------------------------*/
+.work-experience {
+  background: #C8D5B9;
+}
+
+
+/* Education
+------------------------------*/
+.education {
+  background: #F2E3BC;
+}
+
+
+/* Contact Info
+------------------------------*/
+footer {
+  background: #696D7D;
+  color: white;
+}

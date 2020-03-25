@@ -52,6 +52,7 @@ h1, h2 {
 ------------------------------*/
 header {
   background: #96BBBB;
+  text-align: center;
 }
 
 
@@ -103,7 +104,10 @@ h2 {
 .work-experience {
   background: #C8D5B9;
 }
-
+.job-item{
+  display: grid;
+  grid-template-columns: 1fr 2fr
+}
 
 /* Education
 ------------------------------*/
@@ -117,4 +121,15 @@ h2 {
 footer {
   background: #696D7D;
   color: white;
+  text-align: center;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
 }

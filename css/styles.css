@@ -10,6 +10,9 @@ https://coolors.co/96bbbb-faf3dd-c8d5b9-f2e3bc-696d7d
 
 /* Global styles
 ------------------------------*/
+html, body {
+    overflow-x: hidden; /* removed unwanted white space on right side of mobile view */
+}
 html {
   box-sizing: border-box;
 }
@@ -46,13 +49,28 @@ h1, h2 {
   font-weight: 400;
   margin: 0;
 }
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section { /* only child elements within divider element will be selected */
+  border-bottom: 1px dashed #696D7D;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
 /*text-decoration: none removes underline when link is hovered over with mouse*/
 
 /* Profile
 ------------------------------*/
 header {
   background: #96BBBB;
-  text-align: center;
 }
 
 
@@ -80,13 +98,8 @@ header {
 }
 .project-item {
   overflow: hidden;
-  border-bottom: 1px dashed #C8D5B9;
-  padding: 25px 0;
 }
-.project-item img {
-  float: left;
-  margin-right: 20px;
-}
+
 .project-item h3 {
   margin-top: 0;
 }
@@ -94,7 +107,8 @@ h2 {
   margin: 0;
 }
 .content-wrap {
-  width: 800px;
+  max-width: 800px;
+  width: 85%;
   margin: 0 auto;
   padding: 60px 0;
 }
@@ -104,15 +118,18 @@ h2 {
 .work-experience {
   background: #C8D5B9;
 }
-.job-item{
-  display: grid;
-  grid-template-columns: 1fr 2fr
-}
+
 
 /* Education
 ------------------------------*/
 .education {
-  background: #F2E3BC;
+  background-image: url(../images/thumbnail-2.jpg);
+  background-size: cover;
+  background-position: top left;
+  padding-bottom: 30px;
+}
+.education p {
+  width: 60%;
 }
 
 
@@ -121,15 +138,48 @@ h2 {
 footer {
   background: #696D7D;
   color: white;
-  text-align: center;
 }
 .contact-list {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 .contact-list a {
   padding: 15px;
   display: inline-block;
+}
+
+/* Responsive
+------------------------------*/
+@media screen and (min-width:750px) {
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px) {
+  h1 {
+    font-size: 75px;
+    margin-bottom: 12px;
+  }
+  h1, h2 {
+    line-height: 1;
+  }
+  .contact-list {
+    padding: 5px;
+  }
 }

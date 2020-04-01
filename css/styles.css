@@ -182,4 +182,7 @@ footer {
   .contact-list {
     padding: 5px;
   }
+  .project-item img {
+    width: 80%;
+  }
 }

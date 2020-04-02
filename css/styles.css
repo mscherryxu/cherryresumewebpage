@@ -13,11 +13,8 @@ https://coolors.co/96bbbb-faf3dd-c8d5b9-f2e3bc-696d7d
 html, body {
     overflow-x: hidden; /* removed unwanted white space on right side of mobile view */
 }
-html {
+* {
   box-sizing: border-box;
-}
-*, *: before, *: after {
-  box-sizing: inherit;
 }
 
 body {
@@ -123,13 +120,16 @@ h2 {
 /* Education
 ------------------------------*/
 .education {
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25)), url(../images/thumbnail-2.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7)), url(../images/thumbnail-2.jpg);
   background-size: cover;
   background-position: top left;
   padding-bottom: 30px;
 }
 .education p {
   width: 60%;
+}
+.courses {
+  font-style: normal;
 }
 
 
@@ -150,10 +150,13 @@ footer {
 
 /* Responsive
 ------------------------------*/
-@media screen and (max-width:749px) {
+@media screen and (max-width: 749px) {
   h1 {
     font-size: 60px;
     margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 30px;
   }
   h1, h2 {
     line-height: 1;
@@ -186,5 +189,3 @@ footer {
     justify-content: center;
   }
 }
-
-

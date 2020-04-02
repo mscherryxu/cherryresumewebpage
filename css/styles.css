@@ -150,6 +150,22 @@ footer {
 
 /* Responsive
 ------------------------------*/
+@media screen and (max-width:749px) {
+  h1 {
+    font-size: 60px;
+    margin-bottom: 12px;
+  }
+  h1, h2 {
+    line-height: 1;
+  }
+  .contact-list {
+    padding: 5px;
+  }
+  .project-item img {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width:750px) {
   header, footer {
     text-align: center;
@@ -171,18 +187,4 @@ footer {
   }
 }
 
-@media screen and (max-width:749px) {
-  h1 {
-    font-size: 60px;
-    margin-bottom: 12px;
-  }
-  h1, h2 {
-    line-height: 1;
-  }
-  .contact-list {
-    padding: 5px;
-  }
-  .project-item img {
-    width: 50%;
-  }
-}
+

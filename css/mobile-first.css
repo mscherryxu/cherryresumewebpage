@@ -14,20 +14,20 @@ https://coolors.co/96bbbb-faf3dd-c8d5b9-f2e3bc-696d7d
   box-sizing: border-box;
 }
 
-h1 {
-    font-size: 60px;
-    line-height: 1;
-    font-weight: bold;
-  }
-
-h2 {
-    font-size: 30px;
-  }
-
 h1, h2 {
   font-family: 'Baloo 2', cursive;
   font-weight: 400;
   margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 h3 {
@@ -90,13 +90,13 @@ header {
 }
 
 .projects .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
   color: #FAF3DD;
   background: #96BBBB;
   text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-  width: 100%;
 }
 
 .projects .btn:hover {

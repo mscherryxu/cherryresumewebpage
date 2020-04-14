@@ -96,6 +96,7 @@ header {
   padding: 8px;
   border-radius: 4px;
   display: inline-block;
+  width: 100%;
 }
 
 .projects .btn:hover {

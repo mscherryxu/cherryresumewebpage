@@ -169,6 +169,16 @@ footer {
     font-size: 60px;
   }
 
+  .project-p {
+    float: right;
+    width: 60%;
+  }
+
+  .project-img {
+    float: left;
+    width: 40%;
+  }
+
   .job-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
